@@ -9,23 +9,21 @@
         ul {
             display: flex;
             .first {
-                background-image: url("../img/Layer1.png");
+                background-image: url("../img/Layer-1.png");
             }
             .second {
-                background-image: url("../img/Layer2.png");
+                background-image: url("../img/Layer-2.png");
             }
             .third {
-                background-image: url("../img/Layer3.png");
+                background-image: url("../img/Layer-3.png");
             }
             .fourth {
-                background-image: url("../img/Layer4.png");
+                background-image: url("../img/Layer-4.png");
             }
             li {
                 position: relative;
                 width: 25%;
                 min-height: 337px;
-                background-position: 83% 11%;
-                background-size: 261%;
                 border: none;
                 padding: 0;
                 .top {

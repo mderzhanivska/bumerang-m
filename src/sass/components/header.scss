@@ -4,12 +4,19 @@ header {
         padding-bottom: 0;
         padding-top: 10px;
     }
+    @media #{$mobile} {
+
+    }
     .container {
         display: flex;
         justify-content: space-between;
+        @media #{$mobile} {
+
+        }
         .logo {
             display: flex;
             width: 150px;
+
             .text {
                 p {
                     @media #{$tablet} {
@@ -30,6 +37,7 @@ header {
             color: $black;
             display: flex;
             flex-direction: column;
+
             p {
                 display: block;
                 position: relative;

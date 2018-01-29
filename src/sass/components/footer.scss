@@ -20,6 +20,12 @@ footer {
             .nav {
                 padding: 20px 0;
                 display: flex;
+                @media #{$tablet} {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                }
                 li {
                     padding-right: 10px;
                     &:first-child {
