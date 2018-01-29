@@ -1,0 +1,64 @@
+header {
+    padding: 10px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            display: flex;
+            width: 150px;
+            .text {
+                p {
+                    padding-top: 5px;
+                    padding-left: 5px;
+                    color: $green;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: -1px;
+                }
+            }
+        }
+        .contacts {
+            position: relative;
+            color: $black;
+            display: flex;
+            flex-direction: column;
+            p {
+                display: block;
+                position: relative;
+                font-size: 26px;
+                font-weight: 400;
+                font-family: 'Roboto Condensed', sans-serif;
+                text-align: right;
+                &:before {
+                    position: absolute;
+                    content: '';
+                    background-image: url("../img/phone.png");
+                    background-size: 100%;
+                    width: 33px;
+                    height: 34px;
+                    top: 0;
+                    left: -38px;
+                }
+                span {
+                    font-family: 'Roboto Bold Condensed', sans-serif;
+                    font-weight: 700;
+                }
+            }
+            a {
+                position: absolute;
+                text-align: center;
+                width: 136px;
+                background-color: $yellow;
+                color: $another-black;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 31px;
+                border-radius: 3px;
+                top: 40px;
+                right: 0;
+            }
+        }
+    }
+}

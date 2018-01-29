@@ -2,52 +2,89 @@
 <html>
 
   <head>
-    <meta charset="utf-8" />
-    <title>Index page</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#fff" />
-    <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" media="all" href="css/app.css/>
-    
-  </head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/app.css"> </head>
+
   <body>
-
     <!-- BEGIN content -->
-    <div class=" out ">
-      
-	
-	
-	<h1>Index page</h1>
-
-	
-	
-	<p>Hello from partials/_header.html</p>
-
-
-	
-	
-<svg class="icon icon-facebook "><use xlink:href="img/sprite.svg#icon-facebook "></use></svg>
-
-
-
-	
-		
-		
-		
-		<li>Item1</li>
-		
-		<li>Item2</li>
-		
-	
-
-
+    <div class="out">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <div class="img"> <img src="../img/bumerang.png" alt=""> </div>
+            <div class="text">
+              <p>многопрофильная строительная компания</p>
+            </div>
+          </div>
+          <div class="contacts">
+            <p>8(800) <span>555 777 3</span></p> <a href="#">Обратный звонок</a> </div>
+        </div>
+      </header>
+      <section class="navigation">
+        <div class="container">
+          <ul class="nav">
+            <li><a href="#">о компании</a></li>
+            <li><a href="#">продукция</a></li>
+            <li><a href="#">услуги</a></li>
+            <li><a href="#">галерея модных домов</a></li>
+            <li><a href="#">где купить</a></li>
+            <li><a href="#">полезное</a></li>
+            <li><a href="#">контакты</a></li>
+            <li><a href="#">стать дилером</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="elements">
+        <div class="container">
+          <div class="services">
+            <ul>
+              <li class="first"> <span class="top">установка</span> <span class="bottom">Выезд специалиста бесплатно</span> </li>
+              <li class="second"> <span class="top">продажа</span> <span class="bottom">Расчет бесплатно</span> </li>
+              <li class="third"> <span class="top">Ремонт квартир</span> </li>
+              <li class="fourth"> <span class="top">каркасное деревянное строительство (беседки, баки)</span> </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="yellow">
+        <div class="container">
+          <div class="siding"> <span class="top">сайдинг</span>
+            <p>Сайдинг от «Альта-Профиль» – уникальный инновационный продукт. Он полностью соответствует международным стандартам качества и адаптирован к российским климатическим условиям.</p>
+            <ul class="photos">
+              <li><img src="../img/side1.png" alt=""></li>
+              <li><img src="../img/side2.png" alt=""></li>
+              <li><img src="../img/side3.png" alt=""></li>
+              <li><img src="../img/side4.png" alt=""></li>
+              <li><img src="../img/side5.png" alt=""></li>
+              <li><img src="../img/side6.png" alt=""></li>
+            </ul>
+          </div>
+          <div class="panels"> <span class="top">Панели</span>
+            <p>Элегантный цокольный сайдинг производства «Альта-Профиль» надежно защитит здание от механических повреждений и воздействия неблагоприятных климатических факторов.</p>
+            <ul class="photos">
+              <li><img src="../img/side7.png" alt=""></li>
+              <li><img src="../img/side8.png" alt=""></li>
+              <li><img src="../img/side9.png" alt=""></li>
+              <li><img src="../img/side10.png" alt=""></li>
+              <li><img src="../img/side11.png" alt=""></li>
+              <li><img src="../img/side12.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="company">
+        <div class="container"> </div>
+      </section>
     </div>
     <!-- END content -->
-
     <!-- BEGIN scripts -->
-    <script type="text/javascript " src="js/app.js "></script>
+    <script type="text/javascript" src="../js/app.js"></script>
     <!-- END scripts -->
-
   </body>
+
 </html>
