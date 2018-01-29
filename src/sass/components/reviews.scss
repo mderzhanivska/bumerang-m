@@ -1,0 +1,148 @@
+.reviews {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-top: 2px solid $yellow;
+    border-bottom: 2px solid $yellow;
+    background-color: $dark-green;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.21) 0%, rgba(255, 255, 255, 0.21) 50%, rgba(0, 0, 0, 0.21) 100%);
+    .container {
+        display: flex;
+        @media #{$tablet} {
+            flex-direction: column;
+        }
+        h2 {
+            font-size: 24px;
+            color: $white;
+            text-transform: uppercase;
+        }
+        .read-reviews {
+            position: relative;
+            width: 50%;
+            @media #{$tablet} {
+                width: 100%;
+            }
+            ul {
+                padding-top: 30px;
+                display: flex;
+                h3 {
+                    color: $yellow;
+                    font-size: 14px;
+                    font-family: 'Arial MT', sans-serif;
+                    font-weight: 400;
+                    @media #{$tablet} {
+                        font-size: 16px;
+                    }
+                }
+                p {
+                    padding-top: 15px;
+                    padding-right: 35px;
+                    font-family: 'Arial MT', sans-serif;
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    @media #{$tablet} {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .show-all {
+                position: absolute;
+                right: 40px;
+                color: $yellow;
+                font-family: 'Arial MT', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                text-decoration: underline;
+                display: inline-block;
+                padding: 5px;
+                border: 1px solid $yellow;
+                border-radius: 3px;
+                @media #{$tablet} {
+                    font-size: 16px;
+                    margin-top: 20px;
+                    display: block;
+                    width: 100%;
+                    right: 0;
+                    text-align: center;
+                    padding: 10px 0;
+                }
+            }
+        }
+        .specialist {
+            width: 50%;
+            border-left: 1px solid $greener;
+            padding-left: 20px;
+            @media #{$tablet} {
+                padding-top: 80px;
+                border: none;
+                width: 100%;
+                padding-left: 0;
+            }
+            form {
+                @media #{$tablet} {
+                    text-align: center;
+                }
+                .full {
+                    width: 92.5%;
+                    @media #{$tablet} {
+                        width: 50%;
+                    }
+                }
+                input {
+                    display: inline-block;
+                    border: 1px solid $yellow;
+                    border-radius: 3px;
+                    width: 45%;
+                    padding: 8px 10px;
+                    color: $black;
+                    font-family: 'Arial MT', sans-serif;
+                    font-size: 14px;
+                    &::placeholder {
+                        color: $grey;
+                        font-family: 'Arial MT', sans-serif;
+                        font-size: 14px;
+                    }
+                    @media #{$tablet} {
+                        width: 50%;
+                    }
+                }
+                textarea {
+                    margin-top: 18px;
+                    border: 1px solid $yellow;
+                    border-radius: 3px;
+                    width: 92.5%;
+                    padding: 8px 10px;
+                    color: $black;
+                    font-family: 'Arial MT', sans-serif;
+                    font-size: 14px;
+                    &::placeholder {
+                        color: $grey;
+                        font-family: 'Arial MT', sans-serif;
+                        font-size: 14px;
+                    }
+                    @media #{$tablet} {
+                        width: 50%;
+                    }
+                }
+                button {
+                    text-align: center;
+                    color: $white;
+                    font-family: 'Roboto Bold Condensed', sans-serif;
+                    font-size: 20px;
+                    line-height: 42px;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    background-color: $yellow;
+                    width: 45%;
+                    height: 42px;
+                    border-radius: 3px;
+                    @media #{$tablet} {
+                        display: block;
+                        width: 50%;
+                        margin-left: 212px;
+                    }
+                }
+            }
+        }
+    }
+}

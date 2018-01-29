@@ -4,3 +4,18 @@ $black: #252525;
 $another-black: #2b2b2b;
 $yellow: #f6bd14;
 $white: #ffffff;
+$greener: #61c177;
+$grey: #898989;
+$dark-grey: #636363;
+
+//media
+
+$mobile: 'screen and (max-width: 480px)';
+$phone: 'screen and (max-width: 767px)';
+$tablet: 'screen and (max-width: 991px)';
+$desktop: 'screen and (max-width: 1199px)';
+$large: 'screen and (max-width: 1599px)';
+$fullHD: 'screen and (max-width: 1920px)';
+@media #{$mobile} {
+    display: none;
+}

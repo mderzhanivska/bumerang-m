@@ -1,5 +1,9 @@
 header {
     padding: 10px 0;
+    @media #{$tablet} {
+        padding-bottom: 0;
+        padding-top: 10px;
+    }
     .container {
         display: flex;
         justify-content: space-between;
@@ -8,6 +12,9 @@ header {
             width: 150px;
             .text {
                 p {
+                    @media #{$tablet} {
+                        padding-top: 12px;
+                    }
                     padding-top: 5px;
                     padding-left: 5px;
                     color: $green;

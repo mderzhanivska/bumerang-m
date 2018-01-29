@@ -1,9 +1,38 @@
 .company {
+    padding-top: 50px;
+    padding-bottom: 50px;
     box-shadow: inset 0 0 0 #ffffff;
     background-color: #898989;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.22) 0%, rgba(255, 255, 255, 0.22) 50%, rgba(0, 0, 0, 0.22) 100%);
-    background-image: url("..img/layer-28-copy.png");
+    background-image: url("../img/layer-28-copy.png");
+    background-position: 100%;
     .container {
-
+        h2 {
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: $black;
+        }
+        p {
+            padding-top: 20px;
+            color: $black;
+            font-family: 'Arial MT', sans-serif;
+            font-size: 14px;
+        }
+        ul {
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            li {
+                display: flex;
+                flex-direction: column;
+                span {
+                    text-align: center;
+                    max-width: 150px;
+                    font-size: 17px;
+                    text-transform: uppercase;
+                }
+            }
+        }
     }
 }
