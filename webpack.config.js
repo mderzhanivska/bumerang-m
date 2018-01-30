@@ -45,6 +45,7 @@ function createConfig(env) {
         $: 'jquery',
         jQuery: 'jquery',
         'window.jQuery': 'jquery',
+        _: "underscore"
       }),
       new webpack.NoEmitOnErrorsPlugin(),
 

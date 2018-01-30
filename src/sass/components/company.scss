@@ -12,6 +12,9 @@
             font-weight: 400;
             text-transform: uppercase;
             color: $black;
+            @media #{$tablet} {
+                text-align: center;
+            }
         }
         p {
             padding-top: 20px;
@@ -23,6 +26,9 @@
             padding-top: 30px;
             display: flex;
             justify-content: space-between;
+            @media #{$mobile} {
+                flex-wrap: wrap;
+            }
             li {
                 display: flex;
                 flex-direction: column;

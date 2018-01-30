@@ -1,5 +1,6 @@
-$('.multiple-items').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
-});
+
+import $ from 'jquery';
+import 'slick-carousel';
+
+
+$('#carousel').slick();

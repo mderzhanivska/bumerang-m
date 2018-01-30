@@ -16,6 +16,3 @@ $tablet: 'screen and (max-width: 991px)';
 $desktop: 'screen and (max-width: 1199px)';
 $large: 'screen and (max-width: 1599px)';
 $fullHD: 'screen and (max-width: 1920px)';
-@media #{$mobile} {
-    display: none;
-}
