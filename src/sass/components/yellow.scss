@@ -3,38 +3,65 @@
     padding-bottom: 30px;
     .container {
         display: flex;
+        @media #{$mobile} {
+            flex-direction: column;
+        }
         .siding {
             padding-bottom: 50px;
             border-right: 1px solid $dark-green;
+            @media #{$mobile} {
+                border: none;
+                padding-bottom: 0;
+            }
         }
         .panels {
             padding-left: 20px;
+            @media #{$mobile} {
+                padding-left: 0;
+            }
         }
         .siding, .panels {
             width: 50%;
-            margin-top: 30px;
+            margin-top: 25px;
+            @media #{$mobile} {
+                width: 100%;
+            }
             .top {
                 padding-top: 15px;
                 font-size: 24px;
                 font-weight: 400;
                 text-transform: uppercase;
                 color: $black;
+                @media #{$mobile} {
+                    display: block;
+                    text-align: center;
+                }
             }
             p {
                 padding-top: 15px;
                 font-family: 'Arial MT', sans-serif;
                 font-size: 14px;
                 font-weight: 400;
-                padding-right: 50px;
+                padding-right: 30px;
+                @media #{$mobile} {
+                    padding-right: 0;
+                }
             }
             ul {
-                padding-top: 20px;
+                padding-top: 25px;
                 display: flex;
+                @media #{$mobile} {
+                    flex-wrap: wrap;
+                    padding-left: 30px;
+                }
                 li {
                     position: relative;
                     margin-right: 5px;
                     width: 72px;
                     height: 74px;
+                    @media #{$mobile} {
+                        margin-bottom: 5px;
+                    }
                     a {
                         position: absolute;
                         top: 40%;

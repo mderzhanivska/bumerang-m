@@ -1,10 +1,18 @@
 .reviews {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 46px;
     border-top: 2px solid $yellow;
     border-bottom: 2px solid $yellow;
     background-color: $dark-green;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.21) 0%, rgba(255, 255, 255, 0.21) 50%, rgba(0, 0, 0, 0.21) 100%);
+    background-image: url("../img/dsd.png");
+    background-repeat: no-repeat;
+    background-position: 78% 25%;
+    @media #{$tablet} {
+        background-image: none;
+    }
+    @media #{$mobile} {
+        background-image: none;
+    }
     .container {
         display: flex;
         @media #{$tablet} {
@@ -20,13 +28,16 @@
         }
         .read-reviews {
             position: relative;
-            width: 50%;
+            width: 48.5%;
             @media #{$tablet} {
                 width: 100%;
             }
             ul {
-                padding-top: 30px;
+                padding-top: 17px;
                 display: flex;
+                @media #{$mobile} {
+                    flex-direction: column;
+                }
                 h3 {
                     color: $yellow;
                     font-size: 14px;
@@ -37,8 +48,8 @@
                     }
                 }
                 p {
-                    padding-top: 15px;
-                    padding-right: 35px;
+                    padding-top: 10px;
+                    padding-right: 30px;
                     font-family: 'Arial MT', sans-serif;
                     color: $white;
                     font-size: 14px;
@@ -46,11 +57,15 @@
                     @media #{$tablet} {
                         font-size: 16px;
                     }
+                    @media #{$mobile} {
+                        padding-right: 0;
+                    }
                 }
             }
             .show-all {
+                margin-top: 20px;
                 position: absolute;
-                right: 40px;
+                right: 25px;
                 color: $yellow;
                 font-family: 'Arial MT', sans-serif;
                 font-size: 14px;
@@ -81,21 +96,29 @@
                 width: 100%;
                 padding-left: 0;
             }
+            @media #{$mobile} {
+                padding-top: 100px;
+            }
             form {
                 @media #{$tablet} {
                     text-align: center;
                 }
                 .full {
-                    width: 92.5%;
+                    width: 98%;
                     @media #{$tablet} {
                         width: 100%;
+                    }
+                }
+                h2 {
+                    @media #{$mobile} {
+                        padding-bottom: 20px;
                     }
                 }
                 input {
                     display: inline-block;
                     border: 1px solid $yellow;
                     border-radius: 3px;
-                    width: 45%;
+                    width: 48%;
                     padding: 8px 10px;
                     color: $black;
                     font-family: 'Arial MT', sans-serif;
@@ -107,13 +130,16 @@
                     }
                     @media #{$tablet} {
                         width: 100%;
+                    }
+                    @media #{$mobile} {
+                        margin-bottom: 15px;
                     }
                 }
                 textarea {
                     margin-top: 18px;
                     border: 1px solid $yellow;
                     border-radius: 3px;
-                    width: 92.5%;
+                    width: 98%;
                     padding: 8px 10px;
                     color: $black;
                     font-family: 'Arial MT', sans-serif;
@@ -126,8 +152,12 @@
                     @media #{$tablet} {
                         width: 100%;
                     }
+                    @media #{$mobile} {
+                        margin-top: 0;
+                    }
                 }
                 button {
+                    margin-top: 30px;
                     text-align: center;
                     color: $white;
                     font-family: 'Roboto Bold Condensed', sans-serif;
@@ -139,9 +169,15 @@
                     width: 45%;
                     height: 42px;
                     border-radius: 3px;
+                    margin-left: 237px;
                     @media #{$tablet} {
                         display: block;
                         width: 100%;
+                        margin-left: 0;
+                        margin-top: 15px;
+                    }
+                    @media #{$mobile} {
+                        margin-top: 15px;
                     }
                 }
             }

@@ -3,11 +3,16 @@
     background-color: #898989;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.22) 0%, rgba(255, 255, 255, 0.22) 50%, rgba(0, 0, 0, 0.22) 100%);
     background-image: url("../img/layer-28-copy.png");
-    background-position: 100%;
+    background-position: 40% 32%;
+    background-repeat: no-repeat;
 
     .container {
         ul {
             display: flex;
+            @media #{$mobile} {
+                flex-direction: column;
+                padding-top: 2px;
+            }
             .first {
                 background-image: url("../img/layer-1.png");
             }
@@ -26,11 +31,16 @@
                 min-height: 337px;
                 border: none;
                 padding: 0;
+                @media #{$mobile} {
+                    width: 100%;
+                    -webkit-background-size: 102%;
+                    background-size: 102%;
+                }
                 .top {
                     position: absolute;
                     top: -2px;
                     width: 100%;
-                    padding: 20px;
+                    padding: 17px;
                     font-size: 24px;
                     text-transform: uppercase;
                     color: $white;

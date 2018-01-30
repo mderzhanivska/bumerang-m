@@ -3,22 +3,34 @@ footer {
     padding-bottom: 20px;
     .container {
         display: flex;
+        @media #{$mobile} {
+            flex-direction: column;
+        }
         .footer-logo {
             display: flex;
             flex-direction: column;
             img {
                 width: 150px;
                 height: 63px;
+                @media #{$mobile} {
+                   margin: 0 auto;
+                }
             }
             span {
                 font-family: 'Arial MT', sans-serif;
                 font-size: 13px;
                 font-weight: 400;
                 text-transform: uppercase;
+                @media #{$mobile} {
+                    text-align: center;
+                }
             }
         }
         .footer-links {
             padding-left: 40px;
+            @media #{$mobile} {
+                padding-left: 0;
+            }
             .nav {
                 padding: 20px 0;
                 display: flex;
@@ -53,6 +65,9 @@ footer {
                     font-weight: 400;
                     font-family: 'Roboto Condensed', sans-serif;
                     text-align: right;
+                    @media #{$mobile} {
+                        padding-left: 0;
+                    }
                     span {
                         font-size: 20px;
                         font-family: 'Roboto Bold Condensed', sans-serif;

@@ -1,0 +1,59 @@
+.slick-prev,
+.slick-next {
+    width: 70px;
+    height: 70px;
+    z-index: 3333;
+}
+
+.slick-prev {
+    left: 200px;
+    @media #{$desktop} {
+        left: 100px;
+    }
+    @media #{$mobile} {
+        left: 20px;
+    }
+    &:before {
+        content: '>';
+        background-image: url("../img/rectangle-21-copy-2.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        color: transparent;
+        width: 70px;
+        height: 70px;
+    }
+    &:hover {
+
+    }
+}
+.slick-next {
+    right: 200px;
+    @media #{$desktop} {
+        right: 100px;
+    }
+    @media #{$mobile} {
+        right: 20px;
+    }
+    &:before {
+        content: '<';
+        background-image: url("../img/rectangle-21.png");
+        background-repeat: no-repeat;
+        -webkit-background-size: 100%;
+        background-size: 100%;
+        color: transparent;
+        width: 70px;
+        height: 70px;
+    }
+    &:hover {
+
+    }
+}
+.slider {
+    div {
+        img {
+            width: 100%;
+        }
+    }
+}
+

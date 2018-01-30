@@ -13,7 +13,7 @@
         }
         ul {
             display: flex;
-            padding-top: 30px;
+            padding-top: 15px;
             @media #{$tablet} {
                 flex-direction: column;
             }
