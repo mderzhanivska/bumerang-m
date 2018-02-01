@@ -1,12 +1,15 @@
 .yellow {
     background-color: $yellow;
     padding-bottom: 30px;
+
 }
 .container {
-    display: flex;
     @media #{$mobile} {
         flex-direction: column;
     }
+}
+.panel-wrap {
+    display: flex;
 }
 .panel {
     width: 50%;
@@ -65,15 +68,9 @@
                 margin-bottom: 5px;
             }
             &:hover {
-                &__link {
+                .item__link {
                     display: block;
                 }
-            }
-            &__img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                box-sizing: border-box;
             }
             &__link {
                 position: absolute;
@@ -89,10 +86,16 @@
                     font-size: 12px;
                 }
             }
+            &__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-sizing: border-box;
+            }
         }
     }
-}
 
+}
 
 
 

@@ -4,103 +4,103 @@ header {
         padding-bottom: 0;
         padding-top: 10px;
     }
-    .container {
-        display: flex;
-        justify-content: space-between;
-        @media #{$mobile} {
-            flex-direction: column;
-        }
-        .logo {
-            display: flex;
-            width: 150px;
-            img {
-                @media #{$mobile} {
-                    width: 130px;
-                    margin-top: 18px;
-                }
-            }
-            .text {
-                p {
-                    @media #{$tablet} {
-                        padding-top: 12px;
-                    }
-                    @media #{$mobile} {
-                        font-size: 16px;
-                    }
-                    padding-top: 10px;
-                    padding-left: 5px;
-                    color: $green;
-                    text-transform: uppercase;
-                    font-size: 18px;
-                    font-weight: 400;
-                }
-            }
-        }
-        .contacts {
-            padding-top: 5px;
-            position: relative;
-            color: $black;
-            display: flex;
-            flex-direction: column;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    @media #{$mobile} {
+        flex-direction: column;
+    }
+}
+.logo {
+    display: flex;
+    width: 150px;
+    .wrap {
+        &__img {
             @media #{$mobile} {
-                padding-bottom: 5px;
-            }
-            p {
-                display: block;
-                position: relative;
-                font-size: 26px;
-                font-weight: 400;
-                font-family: 'Roboto Condensed', sans-serif;
-                text-align: right;
-                @media #{$mobile} {
-                    text-align: left;
-                    padding-left: 25px;
-                    font-size: 18px;
-                }
-                &:before {
-                    position: absolute;
-                    content: '';
-                    background-image: url("../img/phone.png");
-                    background-size: 100%;
-                    width: 33px;
-                    height: 34px;
-                    top: 0;
-                    left: -38px;
-                    @media #{$mobile} {
-                        left: 0;
-                        width: 20px;
-                        height: 20px;
-                    }
-                }
-                span {
-                    font-family: 'Roboto Bold Condensed', sans-serif;
-                    font-weight: 700;
-                }
-            }
-            a {
-                position: absolute;
-                text-align: center;
-                width: 136px;
-                background-color: $yellow;
-                color: $another-black;
-                text-decoration: none;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 31px;
-                border-radius: 3px;
-                top: 40px;
-                right: 0;
-                @media #{$mobile} {
-                    top: 0;
-                    width: 120px;
-                    font-size: 12px;
-                    line-height: 20px;
-                }
-                &:hover {
-                    color: $white;
-                }
-
+                width: 130px;
+                margin-top: 18px;
             }
         }
+        &__text {
+            @media #{$tablet} {
+                padding-top: 12px;
+            }
+            @media #{$mobile} {
+                font-size: 16px;
+            }
+            padding-top: 10px;
+            padding-left: 5px;
+            color: $green;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
+.contacts {
+    padding-top: 5px;
+    position: relative;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    @media #{$mobile} {
+        padding-bottom: 5px;
+    }
+    &__number {
+        display: block;
+        position: relative;
+        font-size: 26px;
+        font-weight: 400;
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: right;
+        @media #{$mobile} {
+            text-align: left;
+            padding-left: 25px;
+            font-size: 18px;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            background-image: url("../img/phone.png");
+            background-size: 100%;
+            width: 33px;
+            height: 34px;
+            top: 0;
+            left: -38px;
+            @media #{$mobile} {
+                left: 0;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &--bold {
+            font-family: 'Roboto Bold Condensed', sans-serif;
+            font-weight: 700;
+        }
+    }
+    &__link {
+        position: absolute;
+        text-align: center;
+        width: 136px;
+        background-color: $yellow;
+        color: $another-black;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 31px;
+        border-radius: 3px;
+        top: 40px;
+        right: 0;
+        @media #{$mobile} {
+            top: 0;
+            width: 120px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        &:hover {
+            color: $white;
+        }
+
     }
 }
