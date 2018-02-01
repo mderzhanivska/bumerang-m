@@ -1,95 +1,98 @@
 .yellow {
     background-color: $yellow;
     padding-bottom: 30px;
-    .container {
+}
+.container {
+    display: flex;
+    @media #{$mobile} {
+        flex-direction: column;
+    }
+}
+.panel {
+    width: 50%;
+    margin-top: 25px;
+    @media #{$mobile} {
+        width: 100%;
+    }
+    &__siding {
+        padding-bottom: 50px;
+        border-right: 1px solid $dark-green;
+        @media #{$mobile} {
+            border: none;
+            padding-bottom: 0;
+        }
+    }
+    &__panels {
+        padding-left: 20px;
+        @media #{$mobile} {
+            padding-left: 0;
+        }
+    }
+    &__top {
+        padding-top: 15px;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $black;
+        @media #{$mobile} {
+            display: block;
+            text-align: center;
+        }
+    }
+    &__description {
+        padding-top: 15px;
+        font-family: 'Arial MT', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        padding-right: 30px;
+        @media #{$mobile} {
+            padding-right: 0;
+        }
+    }
+    &__photos {
+        padding-top: 25px;
         display: flex;
         @media #{$mobile} {
-            flex-direction: column;
+            flex-wrap: wrap;
+            padding-left: 30px;
         }
-        .siding {
-            padding-bottom: 50px;
-            border-right: 1px solid $dark-green;
+        .item {
+            position: relative;
+            margin-right: 5px;
+            width: 72px;
+            height: 74px;
             @media #{$mobile} {
-                border: none;
-                padding-bottom: 0;
+                margin-bottom: 5px;
             }
-        }
-        .panels {
-            padding-left: 20px;
-            @media #{$mobile} {
-                padding-left: 0;
-            }
-        }
-        .siding, .panels {
-            width: 50%;
-            margin-top: 25px;
-            @media #{$mobile} {
-                width: 100%;
-            }
-            .top {
-                padding-top: 15px;
-                font-size: 24px;
-                font-weight: 400;
-                text-transform: uppercase;
-                color: $black;
-                @media #{$mobile} {
+            &:hover {
+                &__link {
                     display: block;
-                    text-align: center;
                 }
             }
-            p {
-                padding-top: 15px;
-                font-family: 'Arial MT', sans-serif;
+            &__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-sizing: border-box;
+            }
+            &__link {
+                position: absolute;
+                top: 40%;
+                left: 3%;
+                color: $black;
                 font-size: 14px;
-                font-weight: 400;
-                padding-right: 30px;
-                @media #{$mobile} {
-                    padding-right: 0;
-                }
-            }
-            ul {
-                padding-top: 25px;
-                display: flex;
-                @media #{$mobile} {
-                    flex-wrap: wrap;
-                    padding-left: 30px;
-                }
-                li {
-                    position: relative;
-                    margin-right: 5px;
-                    width: 72px;
-                    height: 74px;
-                    @media #{$mobile} {
-                        margin-bottom: 5px;
-                    }
-                    a {
-                        position: absolute;
-                        top: 40%;
-                        left: 3%;
-                        color: $black;
-                        font-size: 14px;
-                        text-decoration: underline;
-                        text-transform: uppercase;
-                        display: none;
-                        @media #{$tablet} {
-                            left: 6%;
-                            font-size: 12px;
-                        }
-                    }
-
-                    &:hover {
-                        a {
-                            display: block;
-                        }
-                    }
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        box-sizing: border-box;
-                    }
+                text-decoration: underline;
+                text-transform: uppercase;
+                display: none;
+                @media #{$tablet} {
+                    left: 6%;
+                    font-size: 12px;
                 }
             }
         }
     }
 }
+
+
+
+

@@ -5,68 +5,131 @@
     background-image: url("../img/layer-28-copy.png");
     background-position: 40% 32%;
     background-repeat: no-repeat;
+}
+.services {
+    display: flex;
+    @media #{$mobile} {
+        flex-direction: column;
+        padding-top: 2px;
+    }
+    &__item {
+        position: relative;
+        width: 25%;
+        min-height: 337px;
+        border: none;
+        padding: 0;
+        @media #{$mobile} {
+            width: 100%;
+            -webkit-background-size: 102%;
+            background-size: 102%;
+        }
 
-    .container {
-        ul {
-            display: flex;
-            @media #{$mobile} {
-                flex-direction: column;
-                padding-top: 2px;
+        &--one {
+            background-image: url("../img/layer-1.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        &--two {
+            background-image: url("../img/layer-2.png");
+        }
+        &--three {
+            background-image: url("../img/layer-3.png");
+        }
+        &--four {
+            background-image: url("../img/layer-4.png");
+        }
+        &__top {
+            position: absolute;
+            top: -2px;
+            width: 100%;
+            padding: 17px;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: $white;
+            background-color: $dark-green;
+            opacity: 0.9;
+        }
+        &__bottom {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+            padding: 5px 15px;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: $white;
+            background-color: $dark-green;
+            opacity: 0.9;
+        }
+        .b-first {
+            @media #{$tablet} {
+                bottom: 10px;
             }
-            .first {
-                background-image: url("../img/layer-1.png");
-            }
-            .second {
-                background-image: url("../img/layer-2.png");
-            }
-            .third {
-                background-image: url("../img/layer-3.png");
-            }
-            .fourth {
-                background-image: url("../img/layer-4.png");
-            }
-            li {
-                position: relative;
-                width: 25%;
-                min-height: 337px;
-                border: none;
-                padding: 0;
-                @media #{$mobile} {
-                    width: 100%;
-                    -webkit-background-size: 102%;
-                    background-size: 102%;
-                }
-                .top {
-                    position: absolute;
-                    top: -2px;
-                    width: 100%;
-                    padding: 17px;
-                    font-size: 24px;
-                    text-transform: uppercase;
-                    color: $white;
-                    background-color: $dark-green;
-                    opacity: 0.9;
-                }
-                .bottom {
-                    position: absolute;
-                    bottom: 30px;
-                    width: 100%;
-                    padding: 5px 15px;
-                    font-size: 16px;
-                    font-weight: 400;
-                    font-family: 'Roboto Condensed', sans-serif;
-                    color: $white;
-                    background-color: $dark-green;
-                    opacity: 0.9;
-                }
-                .b-first {
-                    @media #{$tablet} {
-                        bottom: 10px;
-                    }
 
-                }
-
-            }
         }
     }
 }
+
+
+//div {
+//    width: 100%;
+//    display: flex;
+//    @media #{$mobile} {
+//        flex-direction: column;
+//        padding-top: 2px;
+//    }
+//    .first {
+//        background-image: url("../img/layer-1.png");
+//    }
+//    .second {
+//        background-image: url("../img/layer-2.png");
+//    }
+//    .third {
+//        background-image: url("../img/layer-3.png");
+//    }
+//    .fourth {
+//        background-image: url("../img/layer-4.png");
+//    }
+//    div {
+//        position: relative;
+//        width: 25%;
+//        min-height: 337px;
+//        border: none;
+//        padding: 0;
+//        @media #{$mobile} {
+//            width: 100%;
+//            -webkit-background-size: 102%;
+//            background-size: 102%;
+//        }
+//        .top {
+//            position: absolute;
+//            top: -2px;
+//            width: 100%;
+//            padding: 17px;
+//            font-size: 24px;
+//            text-transform: uppercase;
+//            color: $white;
+//            background-color: $dark-green;
+//            opacity: 0.9;
+//        }
+//        .bottom {
+//            position: absolute;
+//            bottom: 30px;
+//            width: 100%;
+//            padding: 5px 15px;
+//            font-size: 16px;
+//            font-weight: 400;
+//            font-family: 'Roboto Condensed', sans-serif;
+//            color: $white;
+//            background-color: $dark-green;
+//            opacity: 0.9;
+//        }
+//        .b-first {
+//            @media #{$tablet} {
+//                bottom: 10px;
+//            }
+//
+//        }
+//
+//    }
+//}
