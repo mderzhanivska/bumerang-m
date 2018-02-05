@@ -1,5 +1,5 @@
 header {
-   padding-top: 10px;
+   padding-top: 7px;
     @media #{$tablet} {
         padding-bottom: 0;
         padding-top: 10px;
@@ -16,6 +16,11 @@ header {
     display: flex;
     width: 150px;
     &__img {
+        img {
+            @media #{$mobile} {
+                width: 120px;
+            }
+        }
         @media #{$mobile} {
             width: 130px;
             margin-top: 18px;
@@ -25,11 +30,17 @@ header {
         @media #{$tablet} {
             padding-top: 12px;
         }
+        @media #{$phone} {
+            padding-left: 130px;
+            padding-top: 30px;
+        }
         @media #{$mobile} {
             font-size: 16px;
+            padding-left: 30px;
+            padding-top: 15px;
         }
         padding-top: 10px;
-        padding-left: 5px;
+        padding-left: 10px;
         color: $green;
         text-transform: uppercase;
         font-size: 18px;
@@ -91,8 +102,13 @@ header {
         border-radius: 3px;
         top: 40px;
         right: 0;
+        @media #{$phone} {
+            width: 144px;
+            font-size: 16px;
+            line-height: 25px;
+        }
         @media #{$mobile} {
-            top: 0;
+            top: 4px;
             width: 120px;
             font-size: 12px;
             line-height: 20px;

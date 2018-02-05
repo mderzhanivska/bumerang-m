@@ -1,6 +1,6 @@
 .prod {
     background-color: $yellow;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 
 }
 .container {
@@ -10,6 +10,9 @@
 }
 .products {
     display: flex;
+    @media #{$tablet} {
+        flex-direction: column;
+    }
 }
 .product {
     width: 50%;
@@ -47,13 +50,13 @@
         font-family: 'Arial MT', sans-serif;
         font-size: 14px;
         font-weight: 400;
-        padding-right: 30px;
+        padding-right: 25px;
         @media #{$mobile} {
             padding-right: 0;
         }
     }
     &__photos {
-        padding-top: 25px;
+        padding-top: 27px;
         display: flex;
         @media #{$mobile} {
             flex-wrap: wrap;

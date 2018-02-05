@@ -1,4 +1,4 @@
-.reviews {
+.feedback {
     padding-top: 40px;
     padding-bottom: 46px;
     border-top: 2px solid $yellow;
@@ -19,11 +19,15 @@
         flex-direction: column;
     }
 }
-.wrapper {
+.wrap {
     display: flex;
+    justify-content: space-between;
+    @media #{$tablet} {
+        flex-direction: column;
+    }
 }
 
-.header {
+.title {
     font-size: 24px;
     color: $white;
     text-transform: uppercase;
@@ -31,7 +35,7 @@
         text-align: center;
     }
 }
-.read-reviews {
+.rev {
     position: relative;
     width: 48.2%;
     @media #{$tablet} {
@@ -62,9 +66,10 @@
     }
 }
 
-.review-list {
+.reviews {
     display: flex;
-    .review-item {
+    flex-direction: column;
+    .review {
         padding-top: 17px;
         display: flex;
         flex-direction: column;
@@ -98,10 +103,20 @@
 
 }
 
-.specialist {
+.call-us {
     width: 50%;
     border-left: 1px solid $greener;
-    padding-left: 20px;
+    padding-left: 5px;
+    @media #{$tablet} {
+        width: 70%;
+        margin: 0 auto;
+    }
+    &__title {
+        color: $white;
+        @media #{$mobile} {
+            padding-bottom: 20px;
+        }
+    }
     @media #{$tablet} {
         padding-top: 80px;
         border: none;
@@ -112,86 +127,100 @@
         padding-top: 100px;
     }
 }
-.spec-form {
+.form {
     @media #{$tablet} {
         text-align: center;
     }
-    .full {
-        width: 98%;
-        @media #{$tablet} {
+    &__row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        line-height: 0;
+        padding-top: 12px;
+        input {
             width: 100%;
-        }
-    }
-    &__header {
-        color: $white;
-        @media #{$mobile} {
-            padding-bottom: 20px;
-        }
-    }
-    &__input {
-        display: inline-block;
-        border: 1px solid $yellow;
-        border-radius: 3px;
-        width: 48%;
-        padding: 8px 10px;
-        color: $black;
-        font-family: 'Arial MT', sans-serif;
-        font-size: 14px;
-        &::placeholder {
-            color: $grey;
+            border: 1px solid $yellow;
+            border-radius: 3px;
+            padding: 10px 10px;
+            color: $black;
             font-family: 'Arial MT', sans-serif;
             font-size: 14px;
+            &::placeholder {
+                color: $grey;
+                font-family: 'Arial MT', sans-serif;
+                font-size: 14px;
+            }
+            @media #{$tablet} {
+                width: 100%;
+            }
+            @media #{$mobile} {
+                margin-bottom: 15px;
+            }
         }
-        @media #{$tablet} {
+        textarea {
+            border: 1px solid $yellow;
+            border-radius: 3px;
             width: 100%;
-        }
-        @media #{$mobile} {
-            margin-bottom: 15px;
-        }
-    }
-    &__textarea {
-        margin-top: 18px;
-        border: 1px solid $yellow;
-        border-radius: 3px;
-        width: 98%;
-        padding: 8px 10px;
-        color: $black;
-        font-family: 'Arial MT', sans-serif;
-        font-size: 14px;
-        &::placeholder {
-            color: $grey;
+            padding: 8px 10px;
+            color: $black;
             font-family: 'Arial MT', sans-serif;
             font-size: 14px;
+            &::placeholder {
+                color: $grey;
+                font-family: 'Arial MT', sans-serif;
+                font-size: 14px;
+            }
+            @media #{$tablet} {
+                width: 100%;
+            }
+            @media #{$mobile} {
+                margin-top: 0;
+            }
         }
-        @media #{$tablet} {
-            width: 100%;
-        }
-        @media #{$mobile} {
-            margin-top: 0;
+        button {
+            text-align: center;
+            color: $white;
+            font-family: 'Roboto Bold Condensed', sans-serif;
+            font-size: 20px;
+            line-height: 42px;
+            text-transform: uppercase;
+            display: inline-block;
+            background-color: $yellow;
+            width: 49%;
+            height: 36px;
+            border-radius: 3px;
+            margin-left: 240px;
+            @media #{$tablet} {
+                display: block;
+                width: 100%;
+                margin-left: 0;
+                margin-top: 15px;
+            }
+            @media #{$mobile} {
+                margin-top: 15px;
+            }
         }
     }
-    &__btn {
-        margin-top: 30px;
-        text-align: center;
-        color: $white;
-        font-family: 'Roboto Bold Condensed', sans-serif;
-        font-size: 20px;
-        line-height: 42px;
-        text-transform: uppercase;
-        display: inline-block;
-        background-color: $yellow;
-        width: 45%;
-        height: 42px;
-        border-radius: 3px;
-        margin-left: 237px;
-        @media #{$tablet} {
-            display: block;
-            width: 100%;
-            margin-left: 0;
-            margin-top: 15px;
-        }
-        @media #{$mobile} {
-            margin-top: 15px;
+    &__col {
+        width: 49%;
+        input {
+            border: 1px solid $yellow;
+            border-radius: 3px;
+            padding: 10px 10px;
+            color: $black;
+            font-family: 'Arial MT', sans-serif;
+            font-size: 14px;
+            &::placeholder {
+                color: $grey;
+                font-family: 'Arial MT', sans-serif;
+                font-size: 14px;
+            }
+            @media #{$tablet} {
+                width: 100%;
+            }
+            @media #{$mobile} {
+                margin-bottom: 15px;
+            }
         }
     }
 }
