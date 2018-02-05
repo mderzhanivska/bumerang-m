@@ -4,7 +4,10 @@
     background-position: 40% 32%;
     background-repeat: no-repeat;
     .container {
-        padding: 0;
+        @media #{$phone} {
+            padding: 0;
+        }
+
     }
 }
 .service {

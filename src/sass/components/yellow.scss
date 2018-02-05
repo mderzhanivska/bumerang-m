@@ -1,6 +1,6 @@
 .prod {
     background-color: $yellow;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 
 }
 .container {
@@ -15,6 +15,7 @@
     }
 }
 .product {
+    margin-right: 32px;
     width: 50%;
     margin-top: 25px;
     @media #{$mobile} {
@@ -46,7 +47,7 @@
         }
     }
     &__description {
-        padding-top: 15px;
+        padding-top: 11px;
         font-family: 'Arial MT', sans-serif;
         font-size: 14px;
         font-weight: 400;
@@ -95,6 +96,18 @@
                 object-fit: cover;
                 box-sizing: border-box;
             }
+        }
+    }
+    &__btn {
+        font-family: 'Arial MT';
+        font-size: 13px;
+        color: $white;
+        line-height: 30px;
+        background-color: $black;
+        padding: 0 10px;
+        border-radius: 3px;
+        &:hover {
+            color: $yellow;
         }
     }
 

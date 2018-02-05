@@ -15,7 +15,7 @@
         }
     }
     &__description {
-        padding-top: 11px;
+        padding-top: 7px;
         color: $black;
         font-family: 'Arial MT', sans-serif;
         font-size: 14px;
@@ -32,8 +32,22 @@
         &__item {
             display: flex;
             flex-direction: column;
+            text-align: center;
             @media #{$mobile} {
                 width: 50%;
+            }
+            &__icon {
+                display: block;
+                margin: 0 auto;
+                width: 72px;
+                height: 72px;
+                border-radius: 50%;
+                background-color: $yellow;
+                margin-bottom: 9px;
+                img {
+                    text-align: center;
+                    margin-top: 20px;
+                }
             }
             &__descr, &__icon {
                 text-align: center;
