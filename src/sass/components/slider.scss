@@ -67,6 +67,18 @@
             font-size: 17px;
             font-family: 'Roboto Bold Condensed';
             text-align: center;
+            @media #{$desktop} {
+                padding-top: 45px;
+            }
+            @media #{$tablet} {
+                padding-top: 27px;
+            }
+            @media #{$phone} {
+                padding-top: 20px;
+            }
+            @media #{$mobile} {
+                font-size: 10px;
+            }
         }
         &:hover {
             .slide__mask {
