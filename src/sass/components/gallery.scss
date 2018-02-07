@@ -5,6 +5,9 @@
     .container {
         h2 {
             padding-bottom: 12px;
+            @media #{$mobile} {
+                text-align: center;
+            }
         }
     }
     .gal {

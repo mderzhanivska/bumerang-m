@@ -6,9 +6,12 @@
 }
 
 .slick-prev {
-    left: 300px;
+    left: 200px;
     @media #{$desktop} {
-        left: 100px;
+        left: 130px;
+    }
+    @media #{$tablet} {
+        right: 70px;
     }
     @media #{$mobile} {
         left: 20px;
@@ -28,9 +31,12 @@
     }
 }
 .slick-next {
-    right: 300px;
+    right: 200px;
     @media #{$desktop} {
-        right: 100px;
+        right: 130px;
+    }
+    @media #{$tablet} {
+        right: 70px;
     }
     @media #{$mobile} {
         right: 20px;

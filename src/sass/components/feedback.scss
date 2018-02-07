@@ -41,6 +41,7 @@
     border-right: 1px solid $greener;
     @media #{$tablet} {
         width: 100%;
+        border: none;
     }
     .show-all {
         margin-top: 20px;
@@ -70,6 +71,8 @@
 .reviews {
     display: flex;
     @media #{$tablet} {
+    }
+    @media #{$mobile} {
         flex-direction: column;
     }
     .review {

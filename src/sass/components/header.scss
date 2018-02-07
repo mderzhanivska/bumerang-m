@@ -16,7 +16,13 @@ header {
     display: flex;
     width: 150px;
     &__img {
+        @media #{$tablet} {
+            margin-top: 16px;
+        }
         img {
+            @media #{$tablet} {
+                width: 120px;
+            }
             @media #{$mobile} {
                 width: 120px;
             }
@@ -28,11 +34,7 @@ header {
     }
     &__descr {
         @media #{$tablet} {
-            padding-top: 12px;
-        }
-        @media #{$phone} {
-            padding-left: 130px;
-            padding-top: 30px;
+            font-size: 16px;
         }
         @media #{$mobile} {
             font-size: 16px;
@@ -53,6 +55,9 @@ header {
     color: $black;
     display: flex;
     flex-direction: column;
+    @media #{$tablet} {
+        padding-top: 10px;
+    }
     @media #{$mobile} {
         padding-bottom: 5px;
     }
@@ -64,9 +69,11 @@ header {
         font-family: 'Roboto Condensed', sans-serif;
         text-align: right;
         color: $black;
+        @media #{$tablet} {
+            font-size: 20px;
+        }
         @media #{$mobile} {
             text-align: left;
-            padding-left: 25px;
             font-size: 18px;
         }
         &:before {
@@ -78,6 +85,9 @@ header {
             height: 34px;
             top: 0;
             left: -38px;
+            @media #{$tablet} {
+                display: none;
+            }
             @media #{$mobile} {
                 left: 0;
                 width: 20px;
@@ -108,7 +118,7 @@ header {
             line-height: 25px;
         }
         @media #{$mobile} {
-            top: 4px;
+            top: 10px;
             width: 120px;
             font-size: 12px;
             line-height: 20px;
