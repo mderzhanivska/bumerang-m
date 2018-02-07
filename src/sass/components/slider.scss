@@ -8,7 +8,7 @@
 .slick-prev {
     left: 200px;
     @media #{$desktop} {
-        left: 130px;
+        left: 70px;
     }
     @media #{$tablet} {
         right: 70px;
@@ -57,6 +57,8 @@
 }
 .slider {
     div {
+        height: 194px;
+        background-size: cover;
         img {
             width: 100%;
         }
@@ -64,6 +66,7 @@
     .slide {
         position: relative;
         &__mask {
+            padding-top: 72px;
             position: absolute;
             width: 100%;
             height: 100%;
