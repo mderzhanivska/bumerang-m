@@ -3,6 +3,7 @@
     width: 70px;
     height: 70px;
     z-index: 3333;
+    top: 40%
 }
 
 .slick-prev {
@@ -59,6 +60,15 @@
     div {
         height: 194px;
         background-size: cover;
+        @media #{$desktop} {
+            height: 120px;
+        }
+        @media #{$tablet} {
+            height: 80px;
+        }
+        @media #{$mobile} {
+            height: 50px;
+        }
         img {
             width: 100%;
         }
