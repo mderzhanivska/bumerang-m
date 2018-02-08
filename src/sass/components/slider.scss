@@ -64,10 +64,10 @@
             height: 120px;
         }
         @media #{$tablet} {
-            height: 80px;
+            height: 120px;
         }
         @media #{$mobile} {
-            height: 50px;
+            height: 100px;
         }
         img {
             width: 100%;
@@ -75,6 +75,13 @@
     }
     .slide {
         position: relative;
+        &__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
         &__mask {
             padding-top: 72px;
             position: absolute;
